@@ -21,6 +21,10 @@
       url = "github:nix-community/nix-ld-rs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # hardware quirks
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware/master";
+    };
     # Sops (Secrets)
     sops-nix = {
       url = "github:Mic92/sops-nix";
