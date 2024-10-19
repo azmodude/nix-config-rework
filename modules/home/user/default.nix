@@ -14,7 +14,7 @@ let
     getExe
     getExe'
     ;
-  inherit (lib.${namespace}) mkOpt enabled;
+  inherit (lib.${namespace}) mkOpt;
 
   cfg = config.${namespace}.user;
 
@@ -124,7 +124,7 @@ in
         username = mkDefault cfg.name;
       };
 
-      programs.home-manager = enabled;
+      programs.home-manager.enable = true;
 
       # xdg.configFile = {
       #   "sddm/faces/.${cfg.name}".source = lib.mkIf (cfg.icon != null) cfg.icon;
