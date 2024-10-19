@@ -74,8 +74,8 @@
         # Modules that get imported to every NixOS system
         modules.nixos = with inputs; [
           disko.nixosModules.disko
+          # we always need sops for user generation
           sops-nix.nixosModules.sops
-
         ];
       };
       # add treefmt for nix fmt

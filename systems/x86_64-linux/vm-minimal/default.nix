@@ -13,6 +13,9 @@
   ];
 
   ${namespace} = {
+    archetypes = {
+      vm.enable = true;
+    };
     hardware = {
       boot = {
         systemd-boot = {

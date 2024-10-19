@@ -12,6 +12,7 @@ let
   cfg = config.${namespace}.nix;
 in
 {
+  # shared nix settings. Useful if needed in e.g. nixos and darwin
   options.${namespace}.nix = {
     enable = mkBoolOpt true "Whether or not to manage nix configuration.";
     package = mkOpt lib.types.package pkgs.nixVersions.latest "Which nix package to use.";
