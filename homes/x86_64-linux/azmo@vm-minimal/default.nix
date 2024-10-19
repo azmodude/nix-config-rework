@@ -1,14 +1,7 @@
 {
   config,
-  lib,
-  pkgs,
-  namespace,
   ...
 }:
-let
-  inherit (lib) getExe;
-  inherit (lib.${namespace}) enabled;
-in
 {
   azmo-workstations = {
     user = {
