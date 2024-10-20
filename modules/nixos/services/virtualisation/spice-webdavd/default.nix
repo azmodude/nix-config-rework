@@ -30,7 +30,7 @@ in
     services = {
       spice-webdavd = {
         enable = true;
-        inherit package;
+        inherit (cfg) package;
       };
     };
   };
