@@ -54,6 +54,8 @@
           enable = true;
         };
       };
+      locale.enable = true;
+    };
     users = {
       name = "azmo";
       uid = 1000;
