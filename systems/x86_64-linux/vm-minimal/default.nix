@@ -17,11 +17,6 @@
       vm.enable = true;
     };
     hardware = {
-      boot = {
-        systemd-boot = {
-          enable = true;
-        };
-      };
       storage = {
         enable = true;
         ssdEnable = true;
@@ -53,6 +48,12 @@
         enable = true;
       };
     };
+    system = {
+      boot = {
+        systemd-boot = {
+          enable = true;
+        };
+      };
     users = {
       name = "azmo";
       uid = 1000;

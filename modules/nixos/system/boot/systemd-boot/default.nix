@@ -6,10 +6,10 @@
 }:
 with lib;
 let
-  cfg = config.${namespace}.hardware.boot.systemd-boot;
+  cfg = config.${namespace}.system.boot.systemd-boot;
 in
 {
-  options.${namespace}.hardware.boot.systemd-boot = {
+  options.${namespace}.system.boot.systemd-boot = {
     enable = mkEnableOption "systemd-boot";
   };
 
