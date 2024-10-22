@@ -15,6 +15,15 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    ${namespace} = {
+      programs = {
+        terminal = {
+          tools = {
+            run-as-service.enable = true;
+          };
+        };
+      };
+    };
     # ${namespace} = {
     #   programs = {
     #     graphical = {

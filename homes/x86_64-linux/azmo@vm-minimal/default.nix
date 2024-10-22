@@ -8,6 +8,10 @@
       enable = true;
       inherit (config.snowfallorg.user) name;
     };
+    suites = {
+      desktop.enable = true;
+      desktop.hyprland.enable = true;
+    };
   };
 
   home.packages = [ ];
