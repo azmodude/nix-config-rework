@@ -6,7 +6,7 @@
   ...
 }:
 let
-  inherit (lib) mkEnableOption mkIf mkDefault;
+  inherit (lib) mkEnableOption mkIf;
   inherit (lib.${namespace}) mkOpt;
   inherit (lib.types) listOf str;
 
@@ -88,7 +88,6 @@ in
                     type = "regex";
                     negate = true;
                     regex = "^zrepl_.*";
-
                   }
                 ];
               };
