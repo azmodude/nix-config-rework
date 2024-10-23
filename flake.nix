@@ -49,6 +49,9 @@
       url = "github:nix-community/impermanence";
     };
     treefmt-nix.url = "github:numtide/treefmt-nix";
+
+    catppuccin-cursors.url = "github:catppuccin/cursors";
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs =
