@@ -24,7 +24,7 @@ pre-commit-hooks-nix.lib.${pkgs.system}.run {
       clang-format.enable = true;
       clang-tidy.enable = true;
       # conform.enable = true;
-      convco.enable = true;
+      commitizen.enable = true;
 
       deadnix = {
         enable = true;
