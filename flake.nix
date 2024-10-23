@@ -52,6 +52,11 @@
 
     catppuccin-cursors.url = "github:catppuccin/cursors";
     catppuccin.url = "github:catppuccin/nix";
+
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

@@ -13,6 +13,13 @@
       desktop.hyprland.enable = true;
     };
     themes.catppuccin.enable = true;
+    programs = {
+      terminal = {
+        editors = {
+          neovim.enable = true;
+        };
+      };
+    };
   };
 
   home.packages = [ ];
