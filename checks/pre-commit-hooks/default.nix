@@ -66,6 +66,12 @@ pre-commit-hooks-nix.lib.${pkgs.system}.run {
           write = true;
         };
       };
+      gitleaks = {
+        enable = true;
+        name = "gitleaks";
+        description = "Run gitleaks to check for credentials";
+        entry = "${pkgs.gitleaks}/bin/gitleaks protect --verbose --redact --staged";
+      };
 
       shfmt = {
         enable = true;
