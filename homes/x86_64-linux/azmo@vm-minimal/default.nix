@@ -12,6 +12,7 @@
       desktop.enable = true;
       desktop.hyprland.enable = true;
     };
+    themes.catppuccin.enable = true;
   };
 
   home.packages = [ ];
