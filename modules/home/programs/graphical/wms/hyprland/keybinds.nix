@@ -35,7 +35,7 @@ in
           # apps
           "$mainMod, RETURN, exec, $term"
           # kill window
-          "$mainMod, Q, killactive"
+          "$UBER, Q, killactive"
         ];
         bindl = [
           # Kill and restart crashed hyprlock

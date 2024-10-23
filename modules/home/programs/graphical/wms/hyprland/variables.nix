@@ -21,6 +21,7 @@ in
         };
         misc = {
           "$mainMod" = "SUPER";
+          "$UBER" = "SUPER_SHIFT";
           "$HYPER" = "SUPER_SHIFT_CTRL";
           "$ALT-HYPER" = "SHIFT_ALT_CTRL";
           "$RHYPER" = "SUPER_ALT_R_CTRL_R";
