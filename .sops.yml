@@ -1,9 +1,11 @@
 keys:
   - &admin_azmo age1aph83gkdg83l6cf83nsdthp95dcd5natpa7527sd3p8rtlcj3dgstl502c
   - &vm_minimal age1wvx46qd9z8g29cuvvjfekhjrlu6avh5ayjfk7z0wpzdd89652etqxnwtgx
+  - &apollo age1mxecms6cs060p5g326dp00vh0vmxy30z2xea6tgcpywup8q0hp6skmgk3h
 creation_rules:
   - path_regex: secrets/[^/]+\.(yaml|json|env|ini)$
     key_groups:
       - age:
           - *admin_azmo
           - *vm_minimal
+          - *apollo
