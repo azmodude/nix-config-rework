@@ -1,3 +1,4 @@
 .direnv
 .pre-commit-config.yaml
 systems/**/**/extra-files/persistent/etc
+systems/**/**/pass-zpool-*
