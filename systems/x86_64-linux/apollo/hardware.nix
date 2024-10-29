@@ -1,6 +1,7 @@
 { modulesPath, ... }:
 let
-  installDisk = "/dev/nvme0n1";
+  #installDisk = "/dev/disk/by-id/ata-QEMU_HARDDISK_QM00001";
+  installDisk = "/dev/disk/by-id/nvme-eui.0025388311b2ba65";
 in
 {
   imports = [
