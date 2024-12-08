@@ -18,6 +18,9 @@ in
     ${namespace} = {
       programs = {
         graphical = {
+          terminals = {
+            kitty.enable = true;
+          };
           wms = {
             hyprland = enabled;
           };
