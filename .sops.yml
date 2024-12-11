@@ -2,6 +2,7 @@ keys:
   - &admin_azmo age1aph83gkdg83l6cf83nsdthp95dcd5natpa7527sd3p8rtlcj3dgstl502c
   - &vm_minimal age1wvx46qd9z8g29cuvvjfekhjrlu6avh5ayjfk7z0wpzdd89652etqxnwtgx
   - &apollo age1mxecms6cs060p5g326dp00vh0vmxy30z2xea6tgcpywup8q0hp6skmgk3h
+  - &hephaestus age17vu5tq89yr0ny6j0qp4nzszp4p3t03djc3cgj9m656xk2na0pskqm8tup0
 creation_rules:
   - path_regex: secrets/[^/]+\.(yaml|json|env|ini)$
     key_groups:
@@ -9,3 +10,4 @@ creation_rules:
           - *admin_azmo
           - *vm_minimal
           - *apollo
+          - *hephaestus
