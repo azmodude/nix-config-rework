@@ -19,8 +19,11 @@ in
     ${namespace} = {
       suites = {
         common.enable = true;
-        # desktop = enabled;
-        # development = enabled;
+        desktop = {
+          enable = true;
+          hyprland.enable = true;
+          gnome.enable = true;
+        };
       };
     };
   };

@@ -1,12 +1,13 @@
 { inputs, modulesPath, ... }:
 let
-  #installDisk = "/dev/disk/by-id/ata-QEMU_HARDDISK_QM00001";
   installDisk = "/dev/disk/by-id/nvme-eui.0025388311b2ba65";
 in
 {
   imports = [
     ./disk-config.nix
-    inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p14s-amd-gen2
+    inputs.nixos-hardware.nixosModules.common.cpu.intel
+    inputs.nixos-hardware.nixosModules.common.cpu.intel.kaby-lake
+    inputs.nixos-hardware.nixosModules.common.pc.laptop.ssd
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
@@ -15,6 +16,6 @@ in
   hardware = {
     enableRedistributableFirmware = true;
   };
-  # thermald is Intel only
-  #services.thermald.enable = lib.mkDefault true;
+  services.thermald.enable = lib.mkDefault true;
+
 }
