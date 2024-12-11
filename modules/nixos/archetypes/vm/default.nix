@@ -19,12 +19,14 @@ in
     ${namespace} = {
       suites = {
         common.enable = true;
-        desktop.enable = true;
-        desktop.hyprland.enable = true;
+        desktop = {
+          enable = true;
+          hyprland.enable = true;
+          gnome.enable = true;
+        };
         # development = enabled;
         vm.enable = true;
       };
-      display-managers.sddm.enable = true;
     };
   };
 }
