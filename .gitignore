@@ -1,4 +1,6 @@
 .direnv
 .pre-commit-config.yaml
-systems/**/**/extra-files/persistent/etc
+systems/**/**/extra-files/persistent/etc/ssh/**
+!systems/**/**/extra-files/persistent/etc/ssh/
+!systems/**/**/extra-files/persistent/etc/ssh/.gitkeep
 systems/**/**/pass-zpool-*
