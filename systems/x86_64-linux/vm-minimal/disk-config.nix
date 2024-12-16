@@ -73,7 +73,7 @@
           "local/root" = {
             type = "zfs_fs";
             mountpoint = "/";
-            options.mountpoint = "legacy";
+            options = { };
             postCreateHook = ''
               zfs snapshot rpool/local/root@blank
             '';
@@ -84,22 +84,17 @@
             options = {
               atime = "off";
               canmount = "on";
-              mountpoint = "legacy";
             };
           };
           "data/home" = {
             type = "zfs_fs";
             mountpoint = "/home";
-            options = {
-              mountpoint = "legacy";
-            };
+            options = { };
           };
           "data/persistent" = {
             type = "zfs_fs";
             mountpoint = "/persistent";
-            options = {
-              mountpoint = "legacy";
-            };
+            options = { };
           };
         }; # datasets
       }; # rpool
