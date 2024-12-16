@@ -1,13 +1,18 @@
-{ inputs, modulesPath, ... }:
+{
+  inputs,
+  lib,
+  modulesPath,
+  ...
+}:
 let
-  installDisk = "/dev/disk/by-id/nvme-eui.0025388311b2ba65";
+  installDisk = "/dev/disk/by-id/nvme-eui.002538bc61b3991c";
 in
 {
   imports = [
     ./disk-config.nix
-    inputs.nixos-hardware.nixosModules.common.cpu.intel
-    inputs.nixos-hardware.nixosModules.common.cpu.intel.kaby-lake
-    inputs.nixos-hardware.nixosModules.common.pc.laptop.ssd
+    inputs.nixos-hardware.nixosModules.common-cpu-intel
+    inputs.nixos-hardware.nixosModules.common-gpu-intel-kaby-lake
+    inputs.nixos-hardware.nixosModules.common-pc-laptop-ssd
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
