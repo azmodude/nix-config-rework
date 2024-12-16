@@ -62,6 +62,10 @@
       url = "github:nix-community/lanzaboote/v0.4.1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixos-facter-modules = {
+      url = "github:numtide/nixos-facter-modules";
+    };
   };
 
   outputs =
@@ -89,6 +93,8 @@
           disko.nixosModules.disko
           # we always need sops for user generation
           sops-nix.nixosModules.sops
+          # facter for hardware configuration
+          nixos-facter-modules.nixosModules.facter
         ];
       };
       # add treefmt for nix fmt
