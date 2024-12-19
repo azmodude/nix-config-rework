@@ -1,4 +1,5 @@
 {
+  inputs,
   lib,
   modulesPath,
   ...
@@ -9,9 +10,11 @@ in
 {
   imports = [
     ./disk-config.nix
+    inputs.nixos-hardware.nixosModules.common-cpu-intel
+    inputs.nixos-hardware.nixosModules.common-gpu-intel-kaby-lake
+    inputs.nixos-hardware.nixosModules.common-pc-laptop-ssd
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
-  facter.reportPath = ./facter.json;
 
   disko.devices.disk.disk0.device = installDisk;
 
