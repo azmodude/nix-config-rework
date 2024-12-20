@@ -30,6 +30,14 @@
         };
       };
     };
+    security = {
+      gpg = {
+        enable = true;
+        fetchKey = {
+          enable = true;
+          Url = "https://github.com/azmodude.gpg";
+          Sha256 = "sha256:1s9y4k90hjl7k75is6lyp491hg1my3vm1kxxahyslj5wy7w09pi8";
+        };
       };
     };
   };
