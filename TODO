@@ -1,2 +1,4 @@
 home-manager:
-  sd-switch
+  - enable sd-switch
+
+move everything sops into security
