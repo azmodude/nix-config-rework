@@ -84,6 +84,10 @@
         # Allow unfree packages
         allowUnfree = true;
       };
+      homes.modules = with inputs; [
+        # catppuccin.homeManagerModules.catppuccin
+        sops-nix.homeManagerModules.sops
+      ];
       systems = {
         hosts = {
           vm-minimal = { };
