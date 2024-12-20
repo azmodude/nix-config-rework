@@ -66,6 +66,7 @@ in
         # };
 
         homeDirectory = mkDefault cfg.home;
+        preferXdgDirectories = mkDefault true;
 
         shellAliases = {
           # nix specific aliases
