@@ -3,7 +3,6 @@ keys:
   - &vm_minimal age1wvx46qd9z8g29cuvvjfekhjrlu6avh5ayjfk7z0wpzdd89652etqxnwtgx
   - &apollo age1mxecms6cs060p5g326dp00vh0vmxy30z2xea6tgcpywup8q0hp6skmgk3h
   - &hephaestus age1tx6wn5dtsqguqslm4cevw2crf6fgg89r6t9glxlz6hkmh4y7rqrq7p373h
-
 creation_rules:
   - path_regex: secrets/[^/]+\.(yaml|json|env|ini)$
     key_groups:
