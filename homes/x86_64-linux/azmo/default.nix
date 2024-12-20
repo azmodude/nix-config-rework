@@ -11,6 +11,7 @@
     suites = {
       desktop.enable = true;
       desktop.hyprland.enable = true;
+      development.enable = true;
     };
     themes.catppuccin.enable = true;
     programs = {
@@ -18,7 +19,17 @@
         editors = {
           neovim.enable = true;
         };
+        tools = {
+          development = {
+            git = {
+              signingMethod = "gpg";
+              signingKey = "0xDEE550054AA972F6";
+            };
+          };
           fzf.enable = true;
+        };
+      };
+    };
       };
     };
   };
