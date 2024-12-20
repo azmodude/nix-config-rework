@@ -43,8 +43,12 @@
   };
 
   home.packages = [ ];
+
   programs = {
     bash = {
+      enable = true;
+    };
+    zsh = {
       enable = true;
     };
   };
