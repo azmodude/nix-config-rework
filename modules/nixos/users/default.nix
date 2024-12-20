@@ -29,10 +29,8 @@ in
   };
 
   config = {
-    environment.systemPackages =
-      with pkgs;
-      [
-      ];
+    environment.systemPackages = with pkgs; [
+    ];
     sops.secrets = {
       ${sops-user-password} = {
         neededForUsers = true;
