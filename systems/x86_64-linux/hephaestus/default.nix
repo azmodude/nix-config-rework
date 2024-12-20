@@ -68,14 +68,14 @@
     };
   };
 
-  # snowfallorg.users.azmo = {
-  #   create = true;
-  #   admin = true;
-  #
-  #   home = {
-  #     enable = true;
-  #   };
-  # };
+  snowfallorg.users.azmo = {
+    # create = true;
+    # admin = true;
+    #
+    home = {
+      enable = true;
+    };
+  };
 
   system.stateVersion = "24.11";
 }
