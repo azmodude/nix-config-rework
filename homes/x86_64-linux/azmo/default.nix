@@ -18,6 +18,7 @@
         editors = {
           neovim.enable = true;
         };
+          fzf.enable = true;
       };
     };
   };
