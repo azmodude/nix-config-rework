@@ -125,7 +125,12 @@ in
         username = mkDefault cfg.name;
       };
 
-      programs.home-manager.enable = true;
+      programs.home-manager = {
+        enable = true;
+      };
+      xdg = {
+        enable = true;
+      };
 
       # xdg.configFile = {
       #   "sddm/faces/.${cfg.name}".source = lib.mkIf (cfg.icon != null) cfg.icon;
